@@ -2,15 +2,15 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
-  const links = ["useState", "useEffect", "useMemo"];
+  const links = ["useState", "useEffect", "useMemo", "useCallback"];
 
   return (
     <main className="p-2">
-      <ul className="flex flex-col gap-2">
+      <ul>
         {links.map(link => (
           <li key={link}>
             <Link href={`/${link}`}>
-              <Button>{link}</Button>
+              <Button className="w-32 my-1">{link}</Button>
             </Link>
           </li>
         ))}

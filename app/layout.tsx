@@ -20,8 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex min-h-screen flex-col items-center p-24">
-          <h1>React Hooks</h1>
+        <div className="flex min-h-screen flex-col items-center justify-start">
+          <h1 className="text-xl font-bold my-4">React Hooks</h1>
           <Link href="/">
             <Button>Home</Button>
           </Link>
