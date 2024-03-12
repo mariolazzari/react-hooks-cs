@@ -4,7 +4,14 @@ import { Button } from "@/components/ui/button";
 
 function HomePage() {
   const links = useMemo(
-    () => ["useState", "useEffect", "useMemo", "useCallback", "useContext"],
+    () => [
+      "useState",
+      "useEffect",
+      "useMemo",
+      "useCallback",
+      "useContext",
+      "useRef",
+    ],
     []
   );
 

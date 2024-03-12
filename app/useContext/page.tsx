@@ -15,9 +15,11 @@ function UseContextPage() {
   });
 
   return (
-    <DashboardContext.Provider value={user}>
-      <Dashboard />
-    </DashboardContext.Provider>
+    <>
+      <DashboardContext.Provider value={user}>
+        <Dashboard />
+      </DashboardContext.Provider>
+    </>
   );
 }
 
