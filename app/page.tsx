@@ -1,8 +1,12 @@
+import { useMemo } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
-export default function Home() {
-  const links = ["useState", "useEffect", "useMemo", "useCallback"];
+function HomePage() {
+  const links = useMemo(
+    () => ["useState", "useEffect", "useMemo", "useCallback", "useContext"],
+    []
+  );
 
   return (
     <main className="p-2">
@@ -18,3 +22,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default HomePage;
