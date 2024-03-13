@@ -11,6 +11,7 @@ function HomePage() {
       "useCallback",
       "useContext",
       "useRef",
+      "useReducer",
     ],
     []
   );
